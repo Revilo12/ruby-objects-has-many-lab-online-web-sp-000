@@ -3,7 +3,7 @@ class Artist
 
   def initialize(name)
     @name = name
-  end 
+  end
 
   def songs
     Song.songs.select {|song| song.artist == self.name}
